@@ -2,19 +2,19 @@
 
 ## Direction
 
-Reference: a contemporary Mayfair beauty studio photographed through smoked bronze glass—quiet daylight, lacquered oxblood details, brushed champagne metal, and precise editorial spacing. The site is image-led and tactile, not ornamental.
+Reference: a contemporary Mayfair beauty studio in quiet daylight—soft beige stone, espresso-brown lacquer, brushed champagne metal, and precise editorial spacing. The site is image-led and tactile, not ornamental.
 
 ## Color
 
-- Strategy: committed. Deep lacquered oxblood carries hero and statement surfaces; champagne is a precise highlight, not a blanket wash.
-- `--canvas`: `oklch(1 0 0)`
-- `--surface`: `oklch(0.965 0.004 20)`
-- `--ink`: `oklch(0.22 0.018 25)`
-- `--muted`: `oklch(0.46 0.018 25)`
-- `--brand`: `oklch(0.31 0.115 353)`
-- `--brand-deep`: `oklch(0.20 0.072 353)`
-- `--champagne`: `oklch(0.72 0.085 78)`
-- `--champagne-light`: `oklch(0.90 0.035 78)`
+- Strategy: committed. Beige and ivory establish calm salon light; espresso brown provides depth; champagne gold is reserved for actions, borders and fine highlights.
+- `--canvas`: `oklch(0.985 0.009 82)`
+- `--surface`: `oklch(0.935 0.026 79)`
+- `--ink`: `oklch(0.22 0.026 58)`
+- `--muted`: `oklch(0.43 0.032 61)`
+- `--brand`: `oklch(0.34 0.055 58)`
+- `--brand-deep`: `oklch(0.19 0.032 55)`
+- `--champagne`: `oklch(0.70 0.105 79)`
+- `--champagne-light`: `oklch(0.90 0.047 82)`
 
 ## Typography
 

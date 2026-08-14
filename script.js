@@ -19,6 +19,24 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMe
 window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 24), { passive: true });
 header.classList.toggle('scrolled', window.scrollY > 24);
 
+const progress = document.querySelector('.scroll-progress');
+const updateProgress = () => {
+  const distance = document.documentElement.scrollHeight - window.innerHeight;
+  const value = distance > 0 ? window.scrollY / distance : 0;
+  progress.style.transform = `scaleX(${Math.min(1, Math.max(0, value))})`;
+};
+window.addEventListener('scroll', updateProgress, { passive: true });
+updateProgress();
+
+const navLinks = [...nav.querySelectorAll('a[href^="#"]')];
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+  });
+}, { rootMargin: '-35% 0px -55%', threshold: 0 });
+document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
